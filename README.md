@@ -1,6 +1,15 @@
 # YoHAM
 Minecraft Plugin
 
+## Dependencies
+Java Development Kit (JDK) >= 25
+
+## Setup
+JDK path needs to be specified in:
+- a) IDE Project Structure (IntelliJ)
+- or b) 'gradle.properties' file in project root
+
+## What is this? TODO?
 * Gradle with Frabic
 * Using Simple Voice Chat (limited to proximity)
 * Global voice chat is in morse code
