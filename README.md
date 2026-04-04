@@ -20,5 +20,5 @@ Minecraft Plugin
   - Slow progression with more perks as you make more things
 
 Dates:
-4/4/2026 - Planning and Rules and Experimentations
-5/1/2026 - Minecraft May - Development Time
+  4/4/2026 - Planning and Rules and Experimentations
+  5/1/2026 - Minecraft May - Development Time
