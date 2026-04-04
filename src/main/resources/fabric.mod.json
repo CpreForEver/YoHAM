@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "yoham",
+	"version": "${version}",
+	"name": "yoham",
+	"description": "Radio exploration in Minecraft!",
+	"authors": [
+		"Chris T",
+		"Matt W"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/CpreForEver/YoHAM#"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/yoham/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"youham.mc.Yoham"
+		],
+		"client": [
+			"youham.mc.client.YohamClient"
+		],
+		"fabric-datagen": [
+			"youham.mc.client.YohamDataGenerator"
+		]
+	},
+	"mixins": [
+		"yoham.mixins.json",
+		{
+			"config": "yoham.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.6",
+		"minecraft": "~26.1.1",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
