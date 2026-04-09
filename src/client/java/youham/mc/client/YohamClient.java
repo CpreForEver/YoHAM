@@ -1,4 +1,4 @@
-package youham.mc.client;
+package yoham.mc.client;
 
 import net.fabricmc.api.ClientModInitializer;
 

@@ -1,4 +1,4 @@
-package youham.mc.client.mixin;
+package yoham.mc.client.mixin;
 
 import net.minecraft.client.Minecraft;
 import org.spongepowered.asm.mixin.Mixin;

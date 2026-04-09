@@ -17,13 +17,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"youham.mc.Yoham"
+			"yoham.mc.Yoham"
 		],
 		"client": [
-			"youham.mc.client.YohamClient"
+			"yoham.mc.client.YohamClient"
 		],
 		"fabric-datagen": [
-			"youham.mc.client.YohamDataGenerator"
+			"yoham.mc.client.YohamDataGenerator"
 		]
 	},
 	"mixins": [
