@@ -26,9 +26,22 @@ loom {
 
 }
 
-fabricApi {
-	configureDataGeneration {
-		client = true
+// fabricApi {
+// 	configureDataGeneration {
+// 		client = true
+// 	}
+// }
+
+repositories {
+	maven {
+		name = "Modrinth"
+		url = "https://api.modrinth.com/maven"
+		content {
+			includeGroup "maven.modrinth"
+		}
+	}
+	maven {
+		url "https://maven.maxhenkel.de/repository/public"
 	}
 }
 
@@ -38,11 +51,15 @@ dependencies {
 	
 	implementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-	// Fabric API. This is technically optional, but you probably want it anyway.
+	// Fabric API (full jar - modular artifacts not available at this version)
 	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
-
-
-	implementation "net.fabricmc.fabric-api:fabric-message-api-v1:${project.fabric_api_version}"
+	
+	// Simple Voice Chat API
+	implementation "de.maxhenkel.voicechat:voicechat-api:${voicechat_api_version}"
+	
+// Simple Voice Chat runtime mod + API stub
+	runtimeOnly "maven.modrinth:simple-voice-chat:fabric-${voicechat_version}"
+	runtimeOnly "de.maxhenkel.voicechat:voicechat-api:${voicechat_api_version}:fabric-stub"
 	
 }
 

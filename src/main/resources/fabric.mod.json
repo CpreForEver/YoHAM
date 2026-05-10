@@ -22,8 +22,8 @@
 		"client": [
 			"yoham.mc.client.YohamClient"
 		],
-		"fabric-datagen": [
-			"yoham.mc.client.YohamDataGenerator"
+		"voicechat": [
+			"yoham.mc.voicechat.YohamVoicechatPlugin"
 		]
 	},
 	"mixins": [
@@ -37,6 +37,7 @@
 		"fabricloader": ">=0.18.6",
 		"minecraft": "~26.1.1",
 		"java": ">=25",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"voicechat_api": ">=2.6.13"
 	}
 }
