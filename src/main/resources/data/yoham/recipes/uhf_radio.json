@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ggg",
+    "GrG",
+    "GGG"
+  ],
+  "key": {
+    "g": {
+      "item": "minecraft:glass"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "r": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "id": "yoham:uhf_radio",
+    "count": 1
+  }
+}

@@ -18,26 +18,16 @@
 	"entrypoints": {
 		"main": [
 			"yoham.mc.Yoham"
-		],
-		"client": [
-			"yoham.mc.client.YohamClient"
-		],
-		"voicechat": [
-			"yoham.mc.voicechat.YohamVoicechatPlugin"
 		]
 	},
 	"mixins": [
-		"yoham.mixins.json",
-		{
-			"config": "yoham.client.mixins.json",
-			"environment": "client"
-		}
+		"yoham.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.18.6",
 		"minecraft": "~26.1.1",
 		"java": ">=25",
 		"fabric-api": "*",
-		"voicechat_api": ">=2.6.13"
+		"voicechat": ">=2.6.13"
 	}
 }
