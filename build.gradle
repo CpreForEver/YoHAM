@@ -63,6 +63,15 @@ dependencies {
 	
 }
 
+tasks.register('copyVoiceChatMod', Copy) {
+	from configurations.runtimeClasspath
+	into 'build/libs'
+	include 'simple-voice-chat*.jar'
+	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+build.dependsOn copyVoiceChatMod
+
 processResources {
 	inputs.property "version", project.version
 

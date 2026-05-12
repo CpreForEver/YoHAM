@@ -209,6 +209,14 @@ maven_group=youham.mc
 - Voice Chat UDP port: 24454 (default) — needs to be open on server
 - Always unregister `AudioSender` when done to free the player slot
 
+### Development Workflow
+- **Be extremely careful with code changes.** Make small, focused changes one at a time.
+- **Rebuild after every step** using `./gradlew build` to catch errors early.
+- **Minimize the number of errors** — fix each error before making the next change.
+- **Verify imports** — Minecraft 26.1 has many renamed classes; always check the correct package.
+- **Test incrementally** — don't write multiple files before building.
+- When in doubt about an API, check the [Fabric docs](https://docs.fabricmc.net/) for the correct Minecraft 26.1 API.
+
 ---
 
 ## Key URLs (Quick Reference)

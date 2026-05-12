@@ -18,6 +18,9 @@
 	"entrypoints": {
 		"main": [
 			"yoham.mc.Yoham"
+		],
+		"client": [
+			"yoham.mc.client.YohamClient"
 		]
 	},
 	"mixins": [
