@@ -41,7 +41,7 @@ repositories {
 		}
 	}
 	maven {
-		url "https://maven.maxhenkel.de/repository/public"
+		url = "https://maven.maxhenkel.de/repository/public"
 	}
 }
 

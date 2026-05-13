@@ -10,10 +10,14 @@ import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.inventory.MenuType.MenuSupplier;
 import yoham.mc.Yoham;
 
-public class RadioMenuType {
-	public static final MenuType<RadioMenu> RADIO = register("radio", RadioMenu::new);
+public class ModMenus {
+	public static MenuType<RadioMenu> RADIO;
 
 	public static <T extends AbstractContainerMenu> MenuType<T> register(String name, MenuSupplier<T> constructor) {
 		return Registry.register(BuiltInRegistries.MENU, Identifier.fromNamespaceAndPath(Yoham.MOD_ID, name), new MenuType<>(constructor, FeatureFlagSet.of()));
+	}
+
+	public static void initialize() {
+		RADIO = register("radio", RadioMenu::new);
 	}
 }
